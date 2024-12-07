@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <style>
+            :root {
+                --color-primary: #8a248a;
+                --color-primary-hover: #b936b9;
+                --bs-link-color: var(--color-primary);
+                --bs-link-hover-color:  var(--color-primary-hover);
+                 --bs-link-color-rgb: 138, 36, 138; 
+                 --bs-link-color-rgb: 138, 36, 138;  
+                 --bs-link-hover-color-rgb: 185, 54, 185;
+                 --bs-nav-link-color: 185, 54, 185;
+                 --bs-btn-bg: var(--color-primary);
+                 --bs-btn-focus-shadow-rgb: var(--color-primary);
+                 --bs-navbar-active-color:  var(--color-primary);
+            }
+            /* a:hover {
+              --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+            } */
+            .navbar-nav {
+                gap: 1rem;
+            }
+            .navbar-nav .nav-link:not(.active) {
+              color: var(--color-primary);
+            }
+            .nav-link:not(.active):hover,
+            .navbar-nav .nav-link.active {
+              background-color: var(--bs-secondary-bg);
+            }
+            .btn-primary {
+              --bs-btn-bg: var(--color-primary);
+              --bs-btn-border-color: var(--color-primary);
+              --bs-btn-hover-bg: var(--color-primary-hover);
+              --bs-btn-hover-border-color:  var(--color-primary-hover);
+              --bs-btn-focus-shadow-rgb: var(--bs-link-hover-color-rgb);
+              --bs-btn-active-bg:  var(--color-primary-hover);
+              --bs-btn-active-border-color:  var(--color-primary-hover);
+              --bs-btn-disabled-bg: var(--color-primary);
+              --bs-btn-disabled-border-color: var(--color-primary);
+            }
+            .carousel-control-next, .carousel-control-prev {
+                filter: invert(1);
+                align-items: flex-start;
+                top: 30vh;
+                width: 5vw;
+            }
+            .fs-smaller {
+              font-size: 90%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="container p-3">
+          <h1>Liliya Bederov</h1>
+          <div class="fs-3 mb-3">Front-end developer portfolio</div>
+            <!-- <ul class="nav nav-pills"> -->
+              <nav class="navbar navbar-expand-lg bg-body-tertiary rounded border">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link rounded active" aria-current="page" href="#pr1">Web development</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link rounded" aria-current="page" href="#pr2">Web, UI/UX design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link rounded" aria-current="page" href="#pr3">Skills</a>
+                      </li>
+                      <!-- <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Quick links</a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#pr1"> Aruba Networking</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Skills</a></li>
+                              </ul>
+                            </li> -->
+                      <li class="nav-item">
+                        <a class="nav-link rounded" href="https://bederov.com/Liliya_Bederov_resume.pdf" target="_blank">Resume <span
+                            class="fs-smaller">(PDF)</span></a>
+                      </li>
+                      <!-- <li class="nav-item">
+                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                  </li> -->
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container ">
+            <div id="pr1" class="py-3">
+            <h2>Project: HPE Aruba Networking</h2>
+            <div class="py-3">
+                <span class="badge rounded-pill text-bg-secondary">HTML5</span> <span class="badge rounded-pill text-bg-secondary">CSS</span>
+                <span class="badge rounded-pill text-bg-secondary">JavaScript</span> <span class="badge rounded-pill text-bg-secondary">PHP</span> <span class="badge rounded-pill text-bg-secondary">WordPress</span> <span class="badge rounded-pill text-bg-secondary">CMS</span>
+                <span class="badge rounded-pill text-bg-secondary">SEO</span> <span class="badge rounded-pill text-bg-secondary">Google Tag Manager</span>
+                <span class="badge rounded-pill text-bg-secondary">Google Analytics (GA4)</span> <span class="badge rounded-pill text-bg-secondary">Looker Studio</span>
+            </div>
+            <p class="lead mb-4">
+                In my time at Aruba, the website <a href="https://www.arubanetworks.com/" target="_blank" class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">arubanetworks.com</a> grew into a global, lead-generating marketing engine supporting 17 languages. I have seen it through rebranding (twice), worked on 3rd-party integrations, optimized page performance, managed analytics tracking, created traffic reports and dashboards. I'm proud of my contribution to the website success, but it has been sunsetted in November 2024 and much of it is no longer online. Please see below for samples of my work.
+            </p>
+            <div class="row  row-cols-1 row-cols-md-3 g-4 mb-5">
+                <div class="col">
+                  <div class="card h-100 text-bg-light">
+                      <img src="./assets/images/thumbs/home.png" class="card-img-top" alt="HPE Aruba Networking home page, October 2024">
+                      <div class="card-body mb-2 border-top">
+                          <h3 class="card-title mt-2 fs-4">Website</h3>
+                          <p class="card-text">I have developed many of the site's templates, themes, and components (written in PHP, interactions in JavaScript). Showing the 2024 rebranding.</p>
+                          <button href="#" class="btn btn-primary stretched-link" data-bs-toggle="modal" data-bs-target="#home">View screens</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-bg-light">
+                        <img src="assets/images/thumbs/landing-page.png" class="card-img-top" alt="Screenshot of a landing page">
+                        <div class="card-body mb-2 border-top">
+                            <h3 class="card-title mt-2 fs-4">Landing pages</h3>
+                            <p class="card-text">Developed and maintained lead-generation forms that integrated with Eloqua and, later, Marketo and had enhanced client-side validation.</p>
+                            <a href="#" class="btn btn-primary stretched-link" data-bs-toggle="modal" data-bs-target="#landing">View screens</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-bg-light">
+                      <img src="assets/images/thumbs/integrations.png" class="card-img-top" alt="Logos of 3rd party tools used on arubanetworks.com: Marketo, Adobe Analytics, Google Analytics (GA4), Google Tag Mnager, Qualtrics, TrustArc, Drift, Reactful, Decibel, 6sense, Clicktale.">
+                      <div class="card-body mb-2 border-top">
+                          <h3 class="card-title mt-2 fs-4">3rd party integrations</h3>
+                          <p class="card-text">These are some of the tools that I've helped to implement on the website: analytics, marketing automation, SEO, consent management, chat, account-based marketing.</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        
+<!-- Modal 1 -->
+<div class="modal fade" id="home" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Arubanetworks.com website (2024)</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+      <div class="modal-body py-0 px-1">
+        <div id="carousel-1" class="carousel slide">
+          <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">Home page, solution and product pages. Notice the reusable components that comprise these templates: hero section, tiles, columns, accordions, customers, related products and resources.</p>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/full/home.png" class="card-img-top" alt="HPE Aruba Networking home page, October 2024">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/solutions.png" class="card-img-top" alt="Solution page">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/product-category.png" class="card-img-top" alt="Product category page">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/product-individual.png" class="card-img-top" alt="Individual product page">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/services.png" class="card-img-top" alt="Services page">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/events.png" class="card-img-top" alt="Events page">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="landing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Landing page examples</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+      <div class="modal-body py-0 px-1">
+        <div id="carousel-2" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+             <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">An example of a landing page with a lead-gen form integrated with Marketo. Client-side validation and re-captcha used.</p>
+              <img src="./assets/images/full/landing-page.png" class="card-img-top" alt="Test drive SD-WAN landing page">
+            </div>
+            <div class="carousel-item">
+              <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">This WordPress-based site for landing pages was used by publishers with limited technical background. I provided training for the publishers and supported adding new languages, custom fields, and other features.</p>
+              <img src="./assets/images/full/landing-page-workshop-3.png" class="card-img-top" alt="Workshop landing page example">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/landing-demos.png" class="card-img-top" alt="Demo pages">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Features</h3>
+<p class="lead mb-4">
+  See some of the tools I've developed for the website.
+</p>
+<div class="row  row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100 text-bg-light">
+        <img src="./assets/images/thumbs/wizard.png" class="card-img-top" alt="SMB product finder">
+        <div class="card-body mb-2 border-top">
+            <h3 class="card-title mt-2 fs-4">Product wizard</h3>
+            <p class="card-text">A questioner designed to help customers find the best combination of products for their needs. Originally it was developed by an agency in jQuery, but I've heavily modified and updated it several times.</p>
+            <button href="#" class="btn btn-primary stretched-link" data-bs-toggle="modal" data-bs-target="#wizard">View screens</button>
+        </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 text-bg-light">
+        <img src="./assets/images/thumbs/gallery.png" class="card-img-top" alt="Product gallery">
+        <div class="card-body mb-2 border-top">
+            <h3 class="card-title mt-2 fs-4">Product gallery</h3>
+            <p class="card-text">This widget showcased multiple product models and allowed to zoom in for details. Based on a Fancybox jQuery plugin.</p>
+            <button href="#" class="btn btn-primary stretched-link" data-bs-toggle="modal" data-bs-target="#gallery">View screens</button>
+        </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 text-bg-light">
+        <img src="./assets/images/thumbs/main-nav.png" class="card-img-top" alt="Main navigation">
+        <div class="card-body mb-2 border-top">
+            <h3 class="card-title mt-2 fs-4">Navigation menu</h3>
+            <p class="card-text">I customized the standard WordPress menu to support multiple levels and made responsive for mobile devices. I also converted jQuery code into vanilla Javascript to improve page load time.</p>
+            <button href="#" class="btn btn-primary stretched-link" data-bs-toggle="modal" data-bs-target="#menu">View screens</button>
+        </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 text-bg-light">
+        <img src="./assets/images/thumbs/search.png" class="card-img-top" alt="Site search">
+        <div class="card-body mb-2 border-top">
+            <h3 class="card-title mt-2 fs-4">Site search</h3>
+            <p class="card-text">This widget in the main nav supported auto-complete and served results from several repositories. I integrated the auto-complete plugin, added repository filters to the search page and managed repositories (Swiftype by Elasticsearch).</p>
+            <button href="#" class="btn btn-primary stretched-link" data-bs-toggle="modal" data-bs-target="#search">View screens</button>
+        </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 text-bg-light">
+        <img src="./assets/images/thumbs/feedback.png" class="card-img-top" alt="Feedback widget">
+        <div class="card-body mb-2 border-top">
+            <h3 class="card-title mt-2 fs-4">Feedback widget</h3>
+            <p class="card-text">I implemented this feedback widget for all pages (and its thumb up/down variation on select resources) utilizing a secure connection to Qualtrix service using OAuth protocol.</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="wizard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Product wizard</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+      <div class="modal-body py-0 px-1">
+        <div id="carousel-3" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+             <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">The wizard was written in PHP and jQuery, translated into 9 languages, and could also be embedded in partner websites.</p>
+              <img src="./assets/images/full/smb-product-wizard-start.png" class="card-img-top" alt="SMB product wizard: start">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/smb-product-wizard-step-1.png" class="card-img-top" alt="SMB product wizard: step 1">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/smb-product-wizard-step-2.png" class="card-img-top" alt="SMB product wizard: step 2">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/smb-product-wizard-step-3.png" class="card-img-top" alt="SMB product wizard: step 3">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/smb-product-wizard-step-4.png" class="card-img-top" alt="SMB product wizard: step 4">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/smb-product-wizard-step-5.png" class="card-img-top" alt="SMB product wizard: step 5">
+            </div>
+            <div class="carousel-item">
+             <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">Based on the selections, the results were presented grouped into 3 "buckets" (if a "bucket" contained more than one item, a corousel was used).</p>
+              <img src="./assets/images/full/smb-product-wizard-results.png" class="card-img-top" alt="SMB product wizard: recommended solution">
+            </div>
+            <div class="carousel-item">
+             <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">The lead-gen form was optional. It used standard validation and integrated with Marketo.</p>
+              <img src="./assets/images/full/smb-product-wizard-contact-form.png" class="card-img-top" alt="SMB product wizard: contact form">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="gallery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Product gallery</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+      <div class="modal-body py-0 px-1">
+        <div id="carousel-4" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/full/gallery-1.png" class="card-img-top" alt="Product gallery">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/gallery-2.png" class="card-img-top" alt="Product gallery: next">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/full/gallery-3.png" class="card-img-top" alt="Zoom on a product model">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-4" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-4" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Main navigation</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+      <div class="modal-body py-0 px-1">
+        <div id="carousel-5" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">Two-level navigation on desktop. Current page indicated.</p>
+              <img src="./assets/images/full/nav-main.png" class="card-img-top" alt="Main navigation">
+            </div>
+            <div class="carousel-item">
+              <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">Navigation on a tablet screen.</p>
+              <img src="./assets/images/full/nav-mobile.png" class="card-img-top" alt="Mobile navigation">
+            </div>
+            <div class="carousel-item">
+              <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">Language navigation (organized and styled from the WordPress language management service).</p>
+              <img src="./assets/images/full/nav-languages.png" class="card-img-top" alt="Languages menu">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-5" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-5" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Site search</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+      <div class="modal-body py-0 px-1">
+        <div id="carousel-6" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">Search icon in the top menu brings up a search box and auto-complete adds results as you type.</p>
+              <img src="./assets/images/full/search-nav.png" class="card-img-top" alt="Search box in the main navigation">
+            </div>
+            <div class="carousel-item">
+              <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">Search page allowed to narrow results by different sites (Community, blog, technical documentation) and included links to more resources.</p>
+              <img src="./assets/images/full/search-page.png" class="card-img-top" alt="Search page">
+            </div>
+            <div class="carousel-item">
+              <p class="border-bottom px-3 py-4 mb-0 text-bg-light text-secondary">Search page also included auto-complete.</p>
+              <img src="./assets/images/full/search-page-autocomplete.png" class="card-img-top" alt="Autocomplete on the search page">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-6" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-6" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-primary-emphasis">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<hr>
+<div id="pr2" class="py-3">
+<h2>Web, UI/UX design</h2>
+<p class="lead mb-4"> Coming soon. <a href="https://bederov.com" target="_blank" class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">See my old portfolio site.</a></p>
+</div>
+<hr>
+<div id="pr3" class="py-3">
+<h2>Skills</h2>
+<p class="lead mb-4">I'm always learning and developing new skills - please see below what I've mastered so far (unless indicated, assume 5-25 years of hands-on experience.)</p>
+<ul>
+  <li>Technical:
+    <ul>
+      <li>HTML5</li>
+      <li>CSS / CSS3</li>
+      <li>Saas</li>
+      <li>Tailwinds CSS</li>
+      <li>JavaScript / ES6+</li>
+      <li>jQuery</li>
+      <li>React (beginner)</li>
+      <li>NextJS (beginner)</li>
+      <li>Typescript (beginner)</li>
+      <li>PHP</li>
+    </ul>
+    </li>
+  <li>Content management (CMS):
+    <ul>
+      <li>WordPress</li>
+      <li>Drupal</li>
+      <li>Adobe Experience Manager (AEM) (beginner)</li>
+    </ul>
+  </li>
+    <li>Marketing:
+      <ul>
+        <li>Search Engine Optimization (SEO)</li>
+        <li>Google Search Console</li>
+        <li>Google Tag Manager (GTM)</li>
+        <li>Adobe Acrobat</li>
+      </ul>
+    </li>
+    <li>Reporting & Analytics:
+      <ul>
+        <li>Google Analytics (GA4)</li>
+        <li>Adobe Analytics</li>
+        <li>Google Looker Studio</li>
+      </ul>
+    </li>
+  <li>Design:
+    <ul>
+      <li>Visual design</li>
+      <li>UI/UX</li>
+      <li>Wireframing</li>
+      <li>Prototyping</li>
+      <li>Adobe Crative Suite (Photoshop, Illustrator, inDesign, Acrobat)</li>
+      <li>Graphic design (typography, attention to detail, design thinking, etc.)</li>
+    </ul>
+    </li>
+    <li>Soft skills:
+      <ul>
+        <li>Excellent communication skills</li>
+        <li>Organized</li>
+        <li>Avid learner</li>
+        <li>Mentor to junior developers</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+        </main>
+        <div class="back-to-top"></div>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+    </body>
+</html>
