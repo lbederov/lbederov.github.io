@@ -2,14 +2,11 @@
 <html lang="en">
     <head>
         <title>Liliya Bederov: front-end developer and designer portfolio</title>
-        <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-
-        <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -54,8 +51,8 @@
               --bs-btn-disabled-bg: var(--color-primary);
               --bs-btn-disabled-border-color: var(--color-primary);
             }
-            .carousel-control-next, .carousel-control-prev {
-                filter: invert(1);
+            .carousel-control-next, .carousel-control-prev {/* 
+                filter: invert(1); */
                 align-items: flex-start;
                 top: 30vh;
                 width: 5vw;
@@ -63,13 +60,36 @@
             .fs-smaller {
               font-size: 90%;
             }
+            .back-to-top {
+              content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20viewBox%3D%220%200%2019%2012%22%3E%0A%20%20%3Cpath%20d%3D%22M17.4%2C10.2L9.4%2C2.2%2C1.4%2C10.2%22%20fill%3D%22none%22%20stroke%3D%22%238a248a%22%20width%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E');
+              position: fixed;
+              right: 30px;
+              bottom: 10px;
+              display: block;
+              width: 20px;
+              height: 20px;
+              scale: 1.3;
+              cursor: pointer;
+            }
+            .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238a248a'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            }
+            .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238a248a'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
         </style>
     </head>
 
     <body>
         <header class="container p-3">
-          <h1>Liliya Bederov</h1>
-          <div class="fs-3 mb-3">Front-end developer portfolio</div>
+          <div class="d-flex flex-row ">
+            <div></div>
+            <div>
+              <h1>Liliya Bederov</h1>
+              <div class="fs-3 mb-3">Front-end developer portfolio</div>
+          </div>
+          </div>
+          
             <!-- <ul class="nav nav-pills"> -->
               <nav class="navbar navbar-expand-lg bg-body-tertiary rounded border">
                 <div class="container-fluid">
@@ -121,7 +141,7 @@
                 <span class="badge rounded-pill text-bg-secondary">Google Analytics (GA4)</span> <span class="badge rounded-pill text-bg-secondary">Looker Studio</span>
             </div>
             <p class="lead mb-4">
-                In my time at Aruba, the website <a href="https://www.arubanetworks.com/" target="_blank" class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">arubanetworks.com</a> grew into a global, lead-generating marketing engine supporting 17 languages. I have seen it through rebranding (twice), worked on 3rd-party integrations, optimized page performance, managed analytics tracking, created traffic reports and dashboards. I'm proud of my contribution to the website success, but it has been sunsetted in November 2024 and much of it is no longer online. Please see below for samples of my work.
+                In my time at Aruba, the website <a href="https://www.arubanetworks.com/" target="_blank" class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">arubanetworks.com</a> grew into a global, lead-generating marketing engine supporting 17 languages. I have seen it through rebranding (twice), worked on 3rd-party integrations, optimized page performance, managed analytics tracking, created traffic reports and dashboards. I'm proud of my contribution to the website success, but it has been sunsetted in November 2024 and much of it is no longer online&mdash;please see some of my work below.
             </p>
             <div class="row  row-cols-1 row-cols-md-3 g-4 mb-5">
                 <div class="col">
@@ -146,7 +166,7 @@
                 </div>
                 <div class="col">
                   <div class="card h-100 text-bg-light">
-                      <img src="assets/images/thumbs/integrations.png" class="card-img-top" alt="Logos of 3rd party tools used on arubanetworks.com: Marketo, Adobe Analytics, Google Analytics (GA4), Google Tag Mnager, Qualtrics, TrustArc, Drift, Reactful, Decibel, 6sense, Clicktale.">
+                      <img src="assets/images/thumbs/integrations.png" class="card-img-top" alt="Logos of 3rd party tools used on arubanetworks.com: Marketo, Adobe Analytics, Google Analytics (GA4), Google Tag Manager, Qualtrics, TrustArc, Drift, Reactful, Decibel, 6sense, Clicktale.">
                       <div class="card-body mb-2 border-top">
                           <h3 class="card-title mt-2 fs-4">3rd party integrations</h3>
                           <p class="card-text">These are some of the tools that I've helped to implement on the website: analytics, marketing automation, SEO, consent management, chat, account-based marketing.</p>
@@ -157,7 +177,7 @@
         
 <!-- Modal 1 -->
 <div class="modal fade" id="home" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Arubanetworks.com website (2024)</h5>
@@ -202,7 +222,7 @@
 
 <!-- Modal 2 -->
 <div class="modal fade" id="landing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Landing page examples</h5>
@@ -287,7 +307,7 @@
         <img src="./assets/images/thumbs/feedback.png" class="card-img-top" alt="Feedback widget">
         <div class="card-body mb-2 border-top">
             <h3 class="card-title mt-2 fs-4">Feedback widget</h3>
-            <p class="card-text">I implemented this feedback widget for all pages (and its thumb up/down variation on select resources) utilizing a secure connection to Qualtrix service using OAuth protocol.</p>
+            <p class="card-text">I implemented this feedback widget for all pages (and its thumb up/down variation on select resources) utilizing a secure connection to Qualtrics service using OAuth protocol.</p>
         </div>
     </div>
   </div>
@@ -295,7 +315,7 @@
 
 <!-- Modal 3 -->
 <div class="modal fade" id="wizard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Product wizard</h5>
@@ -348,7 +368,7 @@
 
 <!-- Modal 4 -->
 <div class="modal fade" id="gallery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Product gallery</h5>
@@ -383,7 +403,7 @@
 
 <!-- Modal 5 -->
 <div class="modal fade" id="menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Main navigation</h5>
@@ -421,7 +441,7 @@
 
 <!-- Modal 6 -->
 <div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Site search</h5>
@@ -461,23 +481,23 @@
 <hr>
 <div id="pr2" class="py-3">
 <h2>Web, UI/UX design</h2>
-<p class="lead mb-4"> Coming soon. <a href="https://bederov.com" target="_blank" class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">See my old portfolio site.</a></p>
+<p class="lead mb-4"> Coming soon. <a href="https://bederov.com" target="_blank" class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">See my old portfolio site</a>.</p>
 </div>
 <hr>
 <div id="pr3" class="py-3">
 <h2>Skills</h2>
-<p class="lead mb-4">I'm always learning and developing new skills - please see below what I've mastered so far (unless indicated, assume 5-25 years of hands-on experience.)</p>
+<p class="lead mb-4">I'm always learning and developing new skills&mdash;please see below what I've mastered so far (unless indicated, assume 5-25 years of hands-on experience).</p>
 <ul>
   <li>Technical:
     <ul>
       <li>HTML5</li>
       <li>CSS / CSS3</li>
       <li>Saas</li>
-      <li>Tailwinds CSS</li>
+      <li>Tailwind CSS</li>
       <li>JavaScript / ES6+</li>
       <li>jQuery</li>
       <li>React (beginner)</li>
-      <li>NextJS (beginner)</li>
+      <li>Next.js (beginner)</li>
       <li>Typescript (beginner)</li>
       <li>PHP</li>
     </ul>
@@ -525,7 +545,7 @@
   </ul>
 </div>
         </main>
-        <div class="back-to-top"></div>
+        <div class="back-to-top" id="to_top"></div>
         <footer>
             <!-- place footer here -->
         </footer>
@@ -541,6 +561,18 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
-
+<script>
+  var toTop = document.getElementById('to_top');
+  window.addEventListener("scroll", (e) => {
+      if (window.scrollY > 100) {
+        toTop.style.display = "block";
+      } else {
+        toTop.style.display = "none";
+      }
+  });
+  toTop.addEventListener("click", (e) => {
+    window.scrollTo(0, 0);
+  });
+</script>
     </body>
 </html>
